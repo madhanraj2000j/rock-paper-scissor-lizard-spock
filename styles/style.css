@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     outline: none;
+}
+html{
+    font-size: 16px;
+}
+:root{
+    --clr-marigold: #f0a202ff;
+    --clr-tangerine: #f18805ff;
+    --clr-flame: #d95d39ff;
+    --clr-oxford-blue: #0e1428ff;
+    --clr-morning-blue: #7b9e89ff;
+     --clr-white:#fffafa;
+     --clr-black:#383838;
+     --box-shadow: 0px 22px 12px rgba(0,0,0,0.15);
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-white);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+.card-container{
+    width: 90%;
+    background-color: var(--clr-white);
+    padding: 1rem 1rem;
+      text-align: center;
+      border-radius: 10px;
+    
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.score-container span {
+    font-weight: 900;
+}
+
+.button-container{
+  display: flex;  
+  flex-wrap:wrap ;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.btn-weapon{
+    margin-top: 2rem; 
+    width: 2.75rem; 
+    height: 2.75rem;
+    font-size: 2rem;
+    background-color: var(--clr-marigold);
+    border: 2px solid var(--clr-marigold);
+    border-radius: 50%;
+     box-shadow:  25px 25px 50px #bebebe,
+    -25px -25px 50px #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+ }
+
+ .btn-weapon:hover{
+    transform: scale(1.05) translateY(-5px);
+}
+.result-container{
+    min-height: 3rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.result-container p {
+    margin-bottom: 0.5rem;
+}
+@media screen  and (min-width :470px) {
+    .card-container{
+        width: 430px;
+    }
+}
